@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Analytics Student Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .survey-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .page-number {
+            float: left;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .next-button {
+            float: right;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Business Analytics Student Survey</h1>
+        <div class="question">
+            <label for="race">What is your race/ethnicity?</label>
+            <select id="race">
+                <option value="asian">Asian</option>
+                <option value="black">Black or African American</option>
+                <option value="hispanic">Hispanic or Latino</option>
+                <option value="white">White</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="gender">What is your gender/sex?</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-binary</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+    </div>
+    <div class="page-number">Page 3 of 4</div>
+    <button class="next-button" onclick="window.location.href='wrauschuber_p4.html';">Next</button>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Analytics Student Survey</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .survey-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .next-button {
+            float: right;
+            margin-top: 20px;
+            margin-right: 20px;
+
+        }
+        .page-number {
+            float: left;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Business Analytics Student Survey</h1>
+        <div class="question">
+            <label for="country">My home country is:</label>
+            <input type="text" id="country" required>
+        </div>
+        <div class="question">
+            <label for="hometown">My home town is:</label>
+            <input type="text" id="hometown" required>
+        </div>
+        <div class="question">
+            <label for="homestate">My home state is:</label>
+            <select name="state" id="state-select">
+                <option value="">-- choose state/territory --</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <!-- Rest of the options -->
+            </select>
+        </div>
+        <div class="question">
+            <label for="impression">My impression of the BAIS major is:</label>
+            <select id="impression">
+                <option value="1">Very Negative</option>
+                <option value="2">Somewhat Negative</option>
+                <option value="3">Neutral</option>
+                <option value="4">Somewhat Positive</option>
+                <option value="5">Very Positive</option>
+            </select>
+        </div>
+        <div class="page-number">Page 1 of 3</div>
+        <button class="next-button" onclick="window.location.href='wrauschuber_p2.html';">Next</button>
+    </div>
+</body>
+</html>

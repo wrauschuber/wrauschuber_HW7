@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Analytics Student Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-left: 20px;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        p {
+            font-size: 18px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+            margin-left: 20px;
+        }
+        label {
+            font-size: 16px;
+            
+        }
+        .page-number {
+            float: left ;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .next-button {
+            float: right ;
+            margin-top: 20px;
+            margin-right: 20px;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Business Analytics Student Survey</h1>
+    <form id="survey-form" method="GET" action="#">
+        <p>I am finishing my:</p>
+        <input type="radio" id="first-year" name="year" value="first-year">
+        <label for="first-year">First year</label><br>
+        <input type="radio" id="second-year" name="year" value="second-year">
+        <label for="second-year">Second year</label><br>
+        <input type="radio" id="third-year" name="year" value="third-year">
+        <label for="third-year">Third year</label><br>
+        <input type="radio" id="fourth-year" name="year" value="fourth-year">
+        <label for="fourth-year">Fourth year</label><br>
+        <input type="radio" id="fifth-year" name="year" value="fifth-year">
+        <label for="fifth-year">Fifth or more year</label><br>
+
+        <p>BAIS core classes I have completed:</p>
+        <input type="checkbox" id="info-systems" name="core-class" value="Information Systems">
+        <label for="info-systems">Information Systems</label><br>
+        <input type="checkbox" id="operations" name="core-class" value="Operations">
+        <label for="operations">Operations</label><br>
+        <input type="checkbox" id="foundations" name="core-class" value="Foundations of Business Analytics">
+        <label for="foundations">Foundations of Business Analytics</label><br>
+        <input type="checkbox" id="comp-thinking" name="core-class" value="Computational Thinking">
+        <label for="comp-thinking">Computational Thinking</label><br>
+        <input type="checkbox" id="db-management" name="core-class" value="Database Management">
+        <label for="db-management">Database Management</label><br>
+        <input type="checkbox" id="data-wrangling" name="core-class" value="Data Wrangling">
+        <label for="data-wrangling">Data Wrangling</label><br>
+        <input type="checkbox" id="data-mining" name="core-class" value="Data Mining">
+        <label for="data-mining">Data Mining</label><br>
+        <input type="checkbox" id="bais-capstone" name="core-class" value="BAIS Capstone">
+        <label for="bais-capstone">BAIS Capstone</label><br>
+    </form>
+    <div class="page-number">Page 2 of 3</div>
+    <button class="next-button" onclick="window.location.href='wrauschuber_p3.html';">Next</button>
+</body>
+</html>
